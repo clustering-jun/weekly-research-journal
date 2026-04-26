@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 20% 98%;
+  --foreground: 222 35% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 35% 12%;
+  --primary: 217 78% 42%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 165 28% 92%;
+  --secondary-foreground: 166 45% 20%;
+  --muted: 214 24% 93%;
+  --muted-foreground: 215 16% 39%;
+  --accent: 43 72% 92%;
+  --accent-foreground: 38 62% 23%;
+  --destructive: 0 72% 45%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 18% 84%;
+  --input: 214 18% 84%;
+  --ring: 217 78% 42%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.print-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 12px;
+}
+
+.print-table th,
+.print-table td {
+  border: 1px solid #1f2937;
+  height: 34px;
+  padding: 7px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.print-table th {
+  background: #eef2f7;
+  text-align: center;
+  font-weight: 700;
+}
+
+.print-col-date {
+  width: 8%;
+}
+
+.print-col-check {
+  width: 6%;
+}
+
+.print-col-time {
+  width: 12%;
+}
+
+.print-col-plan,
+.print-col-achievement {
+  width: 34%;
+}
+
+.print-cell-center {
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.print-cell-text {
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+.print-cell-date,
+.print-cell-time {
+  font-variant-numeric: tabular-nums;
+}
+
+.print-table.summary th {
+  width: 90px;
+  vertical-align: middle;
+}
+
+.print-table.summary td {
+  min-height: 34px;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  html,
+  body {
+    background: white !important;
+  }
+
+  .no-print,
+  aside,
+  header {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .lg\:pl-60 {
+    padding-left: 0 !important;
+  }
+
+  .print-sheet {
+    max-width: none !important;
+    width: 100% !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+}
