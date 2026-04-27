@@ -11,7 +11,7 @@
 
 <div align="center">
 
-| <img src="img/overall.png" alt="Notice_Bot_Usage_Screen" width="900"> |
+| <img src="overall.png" alt="Notice_Bot_Usage_Screen" width="900"> |
 |:--:| 
 | **공지사항 알림봇 사용 화면** |
 
