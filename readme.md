@@ -13,7 +13,7 @@
 
 | <img src="overall.png" alt="Notice_Bot_Usage_Screen" width="900"> |
 |:--:| 
-| **공지사항 알림봇 사용 화면** |
+| **주간 연구 일지 사용 화면** |
 
 
 <br>
